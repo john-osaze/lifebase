@@ -1,15 +1,11 @@
 import React from 'react';
-import Header from '../Component/Header';
-import '../Css/Header.css';
-import Navigation from '../Component/Navigation';
+// import '../Css/Header.css';
+// import Navigation from '../Component/Navigation';
 
 function Landing_Page() {
     return (
         <>
-            <Navigation />
-            <div className="landing_page">
-                <Header/>   
-            </div>
+            Landing_Page
         </>
     )
 }
