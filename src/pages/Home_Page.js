@@ -1,10 +1,21 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
+import { useNavigate } from 'react-router-dom';
+import { StateContext } from '../App';
+import Prescriptions from '../components/Prescriptions';
 
 function Home_Page() {
-    const [mediData, setMediData] = useState([]);
+    const {mediData, isLoggedIn} = useContext(StateContext)
+    const navigate = useNavigate()
+    useEffect(()=>{
+        if (!isLoggedIn) {
+            navigate('/')
+        }
+    },[isLoggedIn])
     return (
         <>
-           home
+           <div className="">
+                <Prescriptions mediData = {mediData} />
+            </div>
         </>
     )
 }
