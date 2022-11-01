@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Navbar, Nav, Container} from 'react-bootstrap';
-import Nav_Icon from '../Assets/plant.svg';
+import Nav_Icon from '../assets/plant.svg';
 import '../Css/Navigation.css'
 import {NavLink} from 'react-router-dom';
 import { StateContext } from '../App';

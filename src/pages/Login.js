@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Form, Button , Image } from 'react-bootstrap'
 import { NavLink, useHistory, useNavigate } from 'react-router-dom'
-import img from '../Assets/Login_Signup-01.svg';
+import img from '../assets/Login_Signup-01.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Css/Login_Signup.css';
 import { StateContext } from '../App';
-import Api from '../Api'
+const Api = require('../Api');
 function Login() {
 	const [email, setEmail] = useState("");
 	const [disb, setdisb] = useState(true);

@@ -1,20 +1,34 @@
-import React, {useContext, useEffect, useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react'
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { StateContext } from '../App';
+import Header from '../components/Header/Header';
 import Prescriptions from '../components/Prescriptions';
+import Sidebar from '../components/Sidebar/Sidebar';
+import '../Css/Home.css';
+import Dashboard from './Dashboard/Dashboard';
 
 function Home_Page() {
-    const {mediData, isLoggedIn} = useContext(StateContext)
+    const { mediData, isLoggedIn } = useContext(StateContext)
     const navigate = useNavigate()
-    useEffect(()=>{
+    useEffect(() => {
         if (!isLoggedIn) {
-            navigate('/')
+            // navigate('/')
         }
-    },[isLoggedIn])
+    }, [isLoggedIn])
     return (
         <>
-           <div className="">
-                <Prescriptions mediData = {mediData} />
+            <div className="wrapper">
+                <aside className="side-panel">
+                    <Sidebar/>
+                </aside>
+                <main className="main-panel">
+                    <Header/>
+                    <div className="container-fluid">
+                        <Routes>
+                            <Route path='/' exact component={Dashboard} />
+                        </Routes>
+                    </div>
+                </main>
             </div>
         </>
     )

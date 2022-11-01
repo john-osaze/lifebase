@@ -20,4 +20,4 @@ class Api {
     }
 }
 
-module.exports = Api
+module.export = Api

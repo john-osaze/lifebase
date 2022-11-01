@@ -2,10 +2,10 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Form, Button,Image } from 'react-bootstrap'
 import { NavLink, unstable_HistoryRouter} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import img from '../Assets/Login_Signup-01.svg';
+import img from '../assets/Login_Signup-01.svg';
 import '../Css/Login_Signup.css';
 import { StateContext } from '../App';
-import Api from '../Api';
+const Api = require( '../Api');
 
 function Signup() {
 	const [name, setName] = useState("");

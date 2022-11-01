@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-// import Card_Img from '../Assets/Login_Signup-01.svg';
-import Card_Img from '../Assets/card_bg.jpg';
+// import Card_Img from '../assets/Login_Signup-01.svg';
+import Card_Img from '../assets/card_bg.jpg';
 import '../Css/Prescription.css';
 const Prescription = props => {
     let jsx = props.data.Medicines.map(el => (

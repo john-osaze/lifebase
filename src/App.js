@@ -29,7 +29,7 @@ function App() {
   },[location])
   return (
     <StateContext.Provider value={{isLoggedIn, setIsLoggedIn, user, setUser, mediData, setMediData}}>
-      {showHeader && <Header />}
+      {/* {showHeader && <Header />} */}
       <Routes>
           {/* <Route exact path='/login' element={<Login />}/> */}
           <Route path='/signup' element={<Signup />} />
