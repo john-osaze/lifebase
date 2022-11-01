@@ -45,8 +45,8 @@ const Dashboard = () => {
                         <FaFileAlt></FaFileAlt>
                       </div>
                       <div className="card-content float-right">
-                        <h6>Appoinments</h6>
-                        <h4 className="float-right">650</h4>
+                        <h6>Appointment</h6>
+                        <h4 className="float-right">None</h4>
                       </div>
                     </div>
                     <div className="card-chart">
@@ -63,8 +63,8 @@ const Dashboard = () => {
                         <FaFileAlt></FaFileAlt>
                       </div>
                       <div className="card-content float-right">
-                        <h6>CaseSolve</h6>
-                        <h4 className="float-right">450</h4>
+                        <h6>Medical Reports</h6>
+                        <h4 className="float-right">45</h4>
                       </div>
                     </div>
                     <div className="card-chart">
@@ -81,8 +81,8 @@ const Dashboard = () => {
                         <FaFileAlt></FaFileAlt>
                       </div>
                       <div className="card-content float-right">
-                        <h6>Release</h6>
-                        <h4 className="float-right">350</h4>
+                        <h6></h6>
+                        <h4 className="float-right">Healthy</h4>
                       </div>
                     </div>
                     <div className="card-chart">
@@ -99,8 +99,8 @@ const Dashboard = () => {
                         <FaFileAlt></FaFileAlt>
                       </div>
                       <div className="card-content float-right">
-                        <h6>NewPatients</h6>
-                        <h4 className="float-right">150</h4>
+                        <h6>Next dosage</h6>
+                        <h4 className="float-right">8:45pm</h4>
                       </div>
                     </div>
                     <div className="card-chart">

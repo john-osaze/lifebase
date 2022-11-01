@@ -65,7 +65,7 @@ const Sidebar = () => {
 
           <li className="">
             <Accordion className="px-0 py-0">
-              <ContextAwareToggle eventKey="0"><span><FaIcons.FaClinicMedical/></span>Appoinments</ContextAwareToggle>
+              <ContextAwareToggle eventKey="0"><span><FaIcons.FaClinicMedical/></span>Appointments</ContextAwareToggle>
               <Accordion.Collapse eventKey="0">
                 <ul className="sidebar__submenu">
                   <li>
