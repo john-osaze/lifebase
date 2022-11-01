@@ -51,7 +51,7 @@ const Sidebar = () => {
           <li className="sidebar--menu-child">
             <Accordion className="px-0 py-0">
               <ContextAwareToggle eventKey="0">
-                <NavLink to="./Dashboard"><span><FaIcons.FaHome></FaIcons.FaHome></span>Dashboard</NavLink>
+                <NavLink to="./"><span><FaIcons.FaHome></FaIcons.FaHome></span>Dashboard</NavLink>
               </ContextAwareToggle>
             </Accordion>
           </li>

@@ -25,7 +25,7 @@ function Home_Page() {
                     <Header/>
                     <div className="container-fluid">
                         <Routes>
-                            <Route path='/' exact component={Dashboard} />
+                            <Route path='/' exact element={<Dashboard/>} />
                         </Routes>
                     </div>
                 </main>
