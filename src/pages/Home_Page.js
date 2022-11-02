@@ -5,6 +5,7 @@ import Header from '../components/Header/Header';
 import Prescriptions from '../components/Prescriptions';
 import Sidebar from '../components/Sidebar/Sidebar';
 import '../Css/Home.css';
+import ViewAppointment from './Appointment/ViewApppointment';
 import Dashboard from './Dashboard/Dashboard';
 
 function Home_Page() {
@@ -25,7 +26,9 @@ function Home_Page() {
                     <Header/>
                     <div className="container-fluid">
                         <Routes>
-                            <Route path='/' exact element={<Dashboard/>} />
+                            <Route path='/view-appointment' element={<ViewAppointment/>} />
+                            {/* <Route path='/view-appointment' element={<Docto/>} /> */}
+                            <Route path='/*' exact element={<Dashboard/>} />
                         </Routes>
                     </div>
                 </main>

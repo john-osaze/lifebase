@@ -36,7 +36,7 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 const Sidebar = () => {
   return (
     <Fragment>
-    {/* <img src={plant}></img> */}
+      {/* <img src={plant}></img> */}
       <nav id="sidebar">
         <a className="sidebar--header" href="#">
           <div className="siderbar-header__logo">
@@ -51,57 +51,48 @@ const Sidebar = () => {
           <li className="sidebar--menu-child">
             <Accordion className="px-0 py-0">
               <ContextAwareToggle eventKey="0">
-                <NavLink to="./"><span><FaIcons.FaHome></FaIcons.FaHome></span>Dashboard</NavLink>
+                <NavLink to="./"><span><FaIcons.FaHome></FaIcons.FaHome></span>Home</NavLink>
               </ContextAwareToggle>
             </Accordion>
           </li>
           <li className="sidebar--menu-child">
             <Accordion className="px-0 py-0">
-              <ContextAwareToggle eventKey="0">
-                <NavLink to="./histories"><span><FaIcons.FaClipboardList/></span>Histories</NavLink>
-              </ContextAwareToggle>
-            </Accordion>
-          </li>
-
-          <li className="">
-            <Accordion className="px-0 py-0">
-              <ContextAwareToggle eventKey="0"><span><FaIcons.FaClinicMedical/></span>Appointments</ContextAwareToggle>
+              <ContextAwareToggle eventKey="0"><span><FaIcons.FaClipboardList /></span>Medical Records</ContextAwareToggle>
               <Accordion.Collapse eventKey="0">
                 <ul className="sidebar__submenu">
                   <li>
-                    <NavLink to="./view-appoinment">View Appoinment</NavLink>
+                    <NavLink to="./add-record">Add Medical Record</NavLink>
                   </li>
                   <li>
-                    <NavLink to="./book-appoinment">Book Appoinment</NavLink>
+                    <NavLink to="./view-appointment">My Medical Records</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="./book-appointment">Family Medical Records</NavLink>
+                  </li>
+                </ul>
+              </Accordion.Collapse>
+
+            </Accordion>
+          </li>
+
+          <li className="sidebar--menu-child">
+            <Accordion className="px-0 py-0">
+              <ContextAwareToggle eventKey="0"><span><FaIcons.FaClinicMedical /></span>Appointments</ContextAwareToggle>
+              <Accordion.Collapse eventKey="0">
+                <ul className="sidebar__submenu">
+                  <li>
+                    <NavLink to="./view-appointment">View Appointment</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="./book-appointment">Book Appointment</NavLink>
                   </li>
                 </ul>
               </Accordion.Collapse>
             </Accordion>
           </li>
-
-          <li className="">
+          <li className="sidebar--menu-child">
             <Accordion className="px-0 py-0">
-              <ContextAwareToggle eventKey="0"><span><FaIcons.FaHospitalUser/></span>Medical Report</ContextAwareToggle>
-
-              <Accordion.Collapse eventKey="0">
-                <ul className="sidebar__submenu">
-                  <li>
-                    <NavLink to="./add-report">Add Report</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="./doctors-comment">Doctor's comment</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="./doctors-comment">My comment</NavLink>
-                  </li>
-                </ul>
-              </Accordion.Collapse>
-            </Accordion>
-          </li>
-
-          <li className="">
-            <Accordion className="px-0 py-0">
-              <ContextAwareToggle eventKey="0"><span><FaIcons.FaMedkit/></span>Prescription</ContextAwareToggle>
+              <ContextAwareToggle eventKey="0"><span><FaIcons.FaMedkit /></span>Prescription</ContextAwareToggle>
 
               <Accordion.Collapse eventKey="0">
                 <ul className="sidebar__submenu">
@@ -116,23 +107,62 @@ const Sidebar = () => {
             </Accordion>
           </li>
 
-          <li className="">
+          <li className="sidebar--menu-child">
             <Accordion className="px-0 py-0">
-              <ContextAwareToggle eventKey="0"><span><FaIcons.FaQuestionCircle/> </span>Complaints</ContextAwareToggle>
+              <ContextAwareToggle eventKey="0"><span><FaIcons.FaEnvelopeOpenText /> </span>Messages</ContextAwareToggle>
 
               <Accordion.Collapse eventKey="0">
-                    <ul className="sidebar__submenu">
-                      <li>
-                        <NavLink to="./file-complain">
-                          File a complain
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="./probation-period">
-                          Probation Period
-                        </NavLink>
-                      </li>
-                    </ul>
+                <ul className="sidebar__submenu">
+                  <li>
+                    <NavLink to="./inbox">
+                      inbox
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="./send-message">
+                      Send a message
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="./sent-messages">
+                      Sent Messages
+                    </NavLink>
+                  </li>
+
+                </ul>
+              </Accordion.Collapse>
+            </Accordion>
+          </li><li className="sidebar--menu-child">
+            <Accordion className="px-0 py-0">
+              <ContextAwareToggle eventKey="0"><span><FaIcons.FaHospitalUser /></span>Personal information</ContextAwareToggle>
+
+              <Accordion.Collapse eventKey="0">
+                <ul className="sidebar__submenu">
+                  <li>
+                    <NavLink to="./doctors-remark">Doctor's Remark</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="./doctors-comment">My comments</NavLink>
+                  </li>
+                </ul>
+              </Accordion.Collapse>
+            </Accordion>
+          </li>
+
+
+          <li className="sidebar--menu-child">
+            <Accordion className="px-0 py-0">
+              <ContextAwareToggle eventKey="0"><span><FaIcons.FaBolt /></span>Settings</ContextAwareToggle>
+
+              <Accordion.Collapse eventKey="0">
+                <ul className="sidebar__submenu">
+                  <li>
+                    <NavLink to="./general">General Settings</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="./account">Account Settings</NavLink>
+                  </li>
+                </ul>
               </Accordion.Collapse>
             </Accordion>
           </li>

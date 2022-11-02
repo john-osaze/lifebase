@@ -34,7 +34,7 @@ function App() {
           {/* <Route exact path='/login' element={<Login />}/> */}
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/home' element={<Home_Page />} />
+          <Route path='/home/*' element={<Home_Page />} />
           {/* <Route path='/add' element={<AddForm />} /> */}
           <Route exact path='/' element={<Landing_Page />}/>
           <Route path='/404' element={<PageNotFound/>} />

@@ -35,6 +35,10 @@ const Dashboard = () => {
               </div>
             </div>
           </section>
+          <section className="summary">
+          <h4>Medical summary</h4>
+            <img className="medical-report-img" src={require('../../assets/summary.png')} />
+          </section>
           <section className="section--daily-statistics">
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
@@ -63,7 +67,7 @@ const Dashboard = () => {
                         <FaFileAlt></FaFileAlt>
                       </div>
                       <div className="card-content float-right">
-                        <h6>Medical Reports</h6>
+                        <h6>Reports</h6>
                         <h4 className="float-right">45</h4>
                       </div>
                     </div>
@@ -81,8 +85,8 @@ const Dashboard = () => {
                         <FaFileAlt></FaFileAlt>
                       </div>
                       <div className="card-content float-right">
-                        <h6></h6>
-                        <h4 className="float-right">Healthy</h4>
+                        <h6>Condition</h6>
+                        <h4 className="float-right">Ashmatic</h4>
                       </div>
                     </div>
                     <div className="card-chart">
@@ -136,31 +140,7 @@ const Dashboard = () => {
             </div>
           </section>
 
-          <section className="section--vaccinate-patient">
-            <div className="row">
-              {/* <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-               <Card className="card-style">
-                 <Card.Header>
-                   Vaccinate Patient List
-                 </Card.Header>
-                 <Card.Body>
-                   <VaccinatePatientList/>
-                 </Card.Body>
-               </Card>
-              </div> */}
-
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-               <Card className="card-style">
-                 <Card.Header>
-                   Doctors List
-                 </Card.Header>
-                 <Card.Body>
-                    {/* <DoctorList/> */}
-                 </Card.Body>
-               </Card>
-              </div>
-            </div>
-          </section> 
+          
 
           <section className="section--activity-board">
             <div className="row">

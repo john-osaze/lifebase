@@ -79,4 +79,9 @@
   #content-dashboard .section--activity-board .card-style .card-body::-webkit-scrollbar-thumb:hover {
     background: rgba(151, 146, 146, 0.4);
   }
+  .summary{
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 30px;
+  }
   
