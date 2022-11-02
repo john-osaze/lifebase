@@ -2,18 +2,18 @@ import React,{Fragment} from "react";
 import { FaHome,FaFileAlt } from "react-icons/fa";
 
 import { Breadcrumb, Card } from "react-bootstrap";
-// import ReactApexChart from "react-apexcharts";
+import ReactApexChart from "react-apexcharts";
 
 
-// import dataTo from '../../data/survey-data.json';
-// import vaccinate from '../../data/vaccinated-data.json';
+import dataTo from '../../Data/survey-data.json';
+import vaccinate from '../../Data/vaccinated-data.json';
 
 // import VaccinatePatientList from '../../components/VaccinatePatientListComponents/VaccinatePatientListComponents'
 // import DoctorList from "../../components/DoctorListComponents/DoctorListComponents";
 
 import './Dashboard.css';
-// import RecentActivityComponents from "../../components/RecentActivityComponents/RecentActivityComponents";
-// import NoticeBoardComponents from "../../components/NoticeBoardComponents/NoticeBoardComponents";
+import RecentActivityComponents from "../../components/RecentActivityComponents/RecentActivityComponents";
+import NoticeBoardComponents from "../../components/NoticeBoardComponents/NoticeBoardComponents";
 
 
 
@@ -115,20 +115,20 @@ const Dashboard = () => {
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                 <Card className="card-style">
-                  <Card.Header>Daily recocovery/effected</Card.Header>
+                  <Card.Header>Recovery rate</Card.Header>
                   <Card.Body className="card-content box-shadow">
                     <div id="chart">   
-                      {/* <ReactApexChart options={dataTo.options} series={dataTo.series} type="area" height={350} /> */}
+                      <ReactApexChart options={dataTo.options} series={dataTo.series} type="area" height={350} />
                     </div>
                   </Card.Body>
                 </Card>
               </div>
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                 <Card className="card-style">
-                  <Card.Header>Daily vaccinated</Card.Header>
+                  <Card.Header>Health Charts</Card.Header>
                   <Card.Body className="card-content box-shadow">
                     <div id="chart">   
-                      {/* <ReactApexChart options={vaccinate.options} series={vaccinate.series} type="bar" height={350} /> */}
+                      <ReactApexChart options={vaccinate.options} series={vaccinate.series} type="bar" height={350} />
                     </div>
                   </Card.Body>
                 </Card>
@@ -138,24 +138,24 @@ const Dashboard = () => {
 
           <section className="section--vaccinate-patient">
             <div className="row">
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              {/* <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                <Card className="card-style">
                  <Card.Header>
                    Vaccinate Patient List
                  </Card.Header>
                  <Card.Body>
-                   {/* <VaccinatePatientList></VaccinatePatientList> */}
+                   <VaccinatePatientList/>
                  </Card.Body>
                </Card>
-              </div>
+              </div> */}
 
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                <Card className="card-style">
                  <Card.Header>
-                   Doctor List
+                   Doctors List
                  </Card.Header>
                  <Card.Body>
-                    {/* <DoctorList></DoctorList> */}
+                    {/* <DoctorList/> */}
                  </Card.Body>
                </Card>
               </div>
@@ -170,7 +170,7 @@ const Dashboard = () => {
                       Recent Activity
                     </Card.Header>
                     <Card.Body>
-                      {/* <RecentActivityComponents></RecentActivityComponents> */}
+                      <RecentActivityComponents></RecentActivityComponents>
                     </Card.Body>
                   </Card>
               </div>
@@ -180,7 +180,7 @@ const Dashboard = () => {
                       Notice
                     </Card.Header>
                     <Card.Body>
-                      {/* <NoticeBoardComponents></NoticeBoardComponents> */}
+                      <NoticeBoardComponents/>
                     </Card.Body>
                   </Card>
               </div>
