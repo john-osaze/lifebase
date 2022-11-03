@@ -6,6 +6,7 @@ import Prescriptions from '../components/Prescriptions';
 import Sidebar from '../components/Sidebar/Sidebar';
 import '../Css/Home.css';
 import ViewAppointment from './Appointment/ViewApppointment';
+import AppointmentModal from '../components/AppointmentsComponents/AppoinmentModal/AppointmentModal';
 import Dashboard from './Dashboard/Dashboard';
 
 function Home_Page() {
@@ -13,7 +14,7 @@ function Home_Page() {
     const navigate = useNavigate()
     useEffect(() => {
         if (!isLoggedIn) {
-            // navigate('/')
+            navigate('/')
         }
     }, [isLoggedIn])
     return (
@@ -26,6 +27,7 @@ function Home_Page() {
                     <Header/>
                     <div className="container-fluid">
                         <Routes>
+                            <Route path='/book-appointment' element={<AppointmentModal />} />
                             <Route path='/view-appointment' element={<ViewAppointment/>} />
                             {/* <Route path='/view-appointment' element={<Docto/>} /> */}
                             <Route path='/*' exact element={<Dashboard/>} />

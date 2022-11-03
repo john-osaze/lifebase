@@ -34,7 +34,7 @@ const NotificationComponents = () => {
           <Media as="li" className="notification-list--single-item">
             <img
               className="mr-2"
-              src={require("../../assets/user/user2.jpg").default}
+              src={require("../../assets/user/user2.jpg")}
               alt="Generic placeholder"
               rounded="true"
             />
@@ -54,7 +54,7 @@ const NotificationComponents = () => {
           <Media as="li" className="notification-list--single-item">
             <img
               className="mr-2"
-              src={require("../../assets/user/user2.jpg").default}
+              src={require("../../assets/user/user2.jpg")}
               alt="Generic placeholder"
               rounded="true"
             />
@@ -74,7 +74,7 @@ const NotificationComponents = () => {
           <Media as="li" className="notification-list--single-item">
             <img
               className="mr-2"
-              src={require("../../assets/user/user2.jpg").default}
+              src={require("../../assets/user/user2.jpg")}
               alt="Generic placeholder"
               rounded="true"
             />
@@ -94,7 +94,7 @@ const NotificationComponents = () => {
           <Media as="li" className="notification-list--single-item">
             <img
               className="mr-2"
-              src={require("../../assets/user/user2.jpg").default}
+              src={require("../../assets/user/user2.jpg")}
               alt="Generic placeholder"
               rounded="true"
             />
@@ -114,7 +114,7 @@ const NotificationComponents = () => {
           <Media as="li" className="notification-list--single-item">
             <img
               className="mr-2"
-              src={require("../../assets/user/user2.jpg").default}
+              src={require("../../assets/user/user2.jpg")}
               alt="Generic placeholder"
               rounded="true"
             />
@@ -134,7 +134,7 @@ const NotificationComponents = () => {
           <Media as="li" className="notification-list--single-item">
             <img
               className="mr-2"
-              src={require("../../assets/user/user2.jpg").default}
+              src={require("../../assets/user/user2.jpg")}
               alt="Generic placeholder"
               rounded="true"
             />

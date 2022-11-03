@@ -10,7 +10,7 @@ import Login from './pages/Login';
 export const StateContext = createContext();
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [showHeader, setShowHeader] = useState(true);
   const [user, setUser] = useState({})
   const [mediData, setMediData] = useState([]);
@@ -28,7 +28,7 @@ function App() {
     })
   },[location])
   return (
-    <StateContext.Provider value={{isLoggedIn, setIsLoggedIn, user, setUser, mediData, setMediData}}>
+    <StateContext.Provider value={{isLoggedIn, user, setUser, mediData, setMediData}}>
       {/* {showHeader && <Header />} */}
       <Routes>
           {/* <Route exact path='/login' element={<Login />}/> */}

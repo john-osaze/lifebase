@@ -18,7 +18,7 @@ import { MdSettings } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Header.css";
-// import NotificationComponents from "../NotificationComponents/NotificationComponents";
+import NotificationComponents from "../NotificationComponents/NotificationComponents";
 
 const Header = () => {
   const [show, toggleShow] = React.useState(false);
@@ -77,7 +77,7 @@ const Header = () => {
                 </Dropdown.Toggle>
                 <span className="d-block d-sm-none">Notification</span>
                 <Dropdown.Menu className="dropdown-menu-right dropdown-menu--custom">
-                  {/* <NotificationComponents></NotificationComponents> */}
+                  <NotificationComponents></NotificationComponents>
                 </Dropdown.Menu>
               </Dropdown>
 

@@ -6,9 +6,8 @@ import { Breadcrumb, Button, Card, FormControl, InputGroup,Pagination } from "re
 
 import './ViewAppointment.css';
 
-// import FrontLinerUserTable from './../../components/AppointmentsComponents/FrontLinerUserTable/ForntLinerUserTable';
+import FrontLinerUserTable from './../../components/AppointmentsComponents/FrontLinerUserTable/FrontLinerUserTable';
 // import VaccinateUserTable from './../../components/AppointmentsComponents/VaccinateUserTable/VaccinateUserTable';
-// import AppointmentModal from './../../components/AppointmentsComponents/AppointmentModal/AppointmentModal';
 
 const ViewAppointment = () => {
     return (
@@ -27,7 +26,7 @@ const ViewAppointment = () => {
                             </div>
                         </div>
                     </section>
-                    {/* <section className="section--front-liner-appointment">
+                    <section className="section--front-liner-appointment">
                         <div className="row">
                             <div className="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                                 <Card className="card-style">
@@ -52,9 +51,6 @@ const ViewAppointment = () => {
                                         <div className="vaccinate-appointment__content">
                                             <div className="vaccinated-appointment--header">
                                                 <div className="row">
-                                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <AppointmentModal/>
-                                                    </div>
                                                     <div className="offset-md-3 col-xs-12 col-sm-12 col-md-3 col-lg-3">
                                                         <div className="vaccinate-appointment--search">
                                                             <InputGroup className="mb-3">
@@ -71,9 +67,9 @@ const ViewAppointment = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="vaccinate-appointment--list">
+                                            {/* <div className="vaccinate-appointment--list">
                                                 <VaccinateUserTable/>
-                                            </div>
+                                            </div> */}
                                             <div className="vaccinate-appointment--pagination float-right">
                                             <Pagination>
                                                 <Pagination.First />
@@ -98,7 +94,7 @@ const ViewAppointment = () => {
                                 </Card>
                             </div>
                         </div>
-                    </section> */}
+                    </section>
                 </div>
             </div>
             

@@ -15,16 +15,16 @@ function Login() {
 
 	function handleSubmit(event) {
 		event.preventDefault();
-        Api.Post('login',{email, password})
-		.then(result=>{
-			if (result.id) {
-                setUser(result);
-				setMediData(result.data)
+        // Api.Post('login',{email, password})
+		// .then(result=>{
+		// 	if (result.id) {
+                // setUser(result);
+				// setMediData(result.data)
                 setIsLoggedIn(true)
                 navigate('/home')
-			}else console.log(result)
-		})
-		.catch(error=>console.log(error))
+		// 	}else console.log(result)
+		// })
+		// .catch(error=>console.log(error))
 		
 
     }

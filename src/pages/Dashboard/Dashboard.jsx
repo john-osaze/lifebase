@@ -36,7 +36,7 @@ const Dashboard = () => {
             </div>
           </section>
           <section className="summary">
-          <h4>Medical summary</h4>
+          <h1>Medical summary</h1>
             <img className="medical-report-img" src={require('../../assets/summary.png')} />
           </section>
           <section className="section--daily-statistics">
