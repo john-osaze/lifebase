@@ -1,0 +1,33 @@
+/* .why-choose-us .info-side{
+    padding-right: 2rem;
+} */
+
+.reasons .reasons-inner .single-reason{
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: var(--page-shadow);
+    height: 30rem;
+    width: 40rem;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.reasons .reasons-inner .single-reason .img-area{
+    border: 2px solid rgb(211, 211, 211);
+    background: rgb(241, 241, 241);
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.reasons .reasons-inner .single-reason img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.reasons .reasons-inner .single-reason h4{
+font-size: 2rem;
+margin: 1.5rem 0;
+}

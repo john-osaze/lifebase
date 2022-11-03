@@ -1,0 +1,13 @@
+.hero-info h3{
+    padding-left: 2rem;
+    border-left: 2px solid var(--main-color);
+}
+
+.hero-info h1{
+    font: normal bold 6rem/normal var(--milliard-bold);    margin: 1.5rem 0;
+}
+
+.hero-info p{
+    max-width: 87.5%;
+    margin-bottom: 2.5rem;
+}
