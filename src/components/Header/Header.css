@@ -1,0 +1,133 @@
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    /* box-shadow: var(--page-shadow); */
+}
+
+nav .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-list .nav-item a{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0 2.5rem;
+    line-height: 1.1rem;
+}
+
+nav .nav-list .nav-item a:not(.nav-item:last-child a){
+    border-right: thin solid var(--black-color);
+}
+
+.nav-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btns button{
+    margin-left: 1rem;
+}
+
+.nav-btns .mobile-menu.open{
+    font-size: 3rem;
+    margin-left: 2.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-list .mobile-menu.close{
+    font-size: 3rem;
+    color: var(--white-color);
+    display: none;
+    cursor: pointer;
+}
+
+.nav-list .social-icons{
+    padding: 4em 2rem;
+    display: none;
+}
+
+.nav-list .social-icons i{
+    color: var(--white-color);
+    font-size: 1.75rem;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: var(--white-color);
+    z-index: 999;
+}
+
+.header-active{
+    box-shadow: 0rem 1.5rem 2.5rem rgba(185, 185, 185, 0.25);
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* .nav-list{
+        display: none !important;
+    } */
+
+    .nav-list .mobile-menu.close{
+        display: block !important;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .nav-list .social-icons{
+        display: block !important;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #7765ff69;
+        height: 100%;
+        z-index: 1111;
+        display: none;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40rem;
+        padding: 4.5rem 6rem;
+        height: 100%;
+        opacity: 100%;
+        background: #132347;
+        z-index: 2222;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        
+    }
+
+    nav .nav-list .nav-item a{
+        font-size: 3rem;
+        display: inline-block;
+        line-height: normal;
+        border: none !important;
+        color: var(--white-color);
+        margin: 2rem 0;
+    }
+
+    .menu-active{
+        display: block;
+    }
+
+    .nav-btns .mobile-menu.open{
+        display: inline-block !important;
+    }
+}
