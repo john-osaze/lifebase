@@ -1,11 +1,3 @@
-# MEDICAL RECORD WEB APP
-
-## Features
--- Holds the medical history of a patient
--- Add record
--- stores prescription
--- dasage reminder
--- SOS feature
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
