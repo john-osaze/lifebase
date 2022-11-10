@@ -77,6 +77,11 @@ a:hover{
   color: var(--white-color);
 }
 
+img{
+  width: 100%;
+  max-width: 100%;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;

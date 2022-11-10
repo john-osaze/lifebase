@@ -10,6 +10,12 @@ import About from './components/About/About';
 import HowItWorks from './components/How-It-Works/HowItWorks';
 import WhyChooseUs from './components/Why-Choose-Us/WhyChooseUs';
 import { Fragment } from 'react';
+// import Testimonial from './components/Testimonial/Testimonial';
+// import Team from './components/Team/Team';
+// import Trustee1 from "./assets/images/trustee-1.png";
+// import Trustee2 from "./assets/images/trustee-2.png";
+// import Trustee3 from "./assets/images/trustee-3.png";
+// import Trustee4 from "./assets/images/trustee-4.png";
 
 // import {Routes} from 'react-router-dom'
 
@@ -64,6 +70,25 @@ function App() {
 		<Fragment>
 			<Header />
 			<Hero />
+			{/* <Container className="sponsors">
+				<div className="title">
+					Our app is trusted by established organizations
+				</div>
+				<Row>
+					<Col lg="3" md="4" sm="6">
+						<img src={Trustee1} alt=""/>
+					</Col>
+					<Col lg="3" md="4" sm="6">
+						<img src={Trustee2} alt=""/>
+					</Col>
+					<Col lg="3" md="4" sm="6">
+						<img src={Trustee3} alt=""/>
+					</Col>
+					<Col lg="3" md="4" sm="6">
+						<img src={Trustee4} alt=""/>
+					</Col>
+				</Row>
+			</Container> */}
 			<About />
 			<Container className='section'>
 				<section className="medical-showcase">
@@ -84,14 +109,12 @@ function App() {
 			</Container>
 			<WhyChooseUs/>
 			<HowItWorks/>
-
+			{/* <Team/> */}
 			<Container className='section data-privacy'>
 				<div className="title-area text-center">
 					<h1 className="title">Your private data stays private</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, accusantium, et quasi, dignissimos aliquam consequatur natus labore animi ipsam expedita nihil. Consequuntur enim quisquam labore rerum sapiente sunt facere in.</p>
-				</div>
-
-			
+				</div>		
 				<Row className='privacy-terms' >
 					{
 						privateDataGrid.map((item, index) => <Col lg="6" md="6" sm="12" key={index} className="d-flex align-items-center justify-content-center privacy-item">
@@ -105,11 +128,11 @@ function App() {
 					</Col>)
 					}
 				</Row>
-
 				<div className="text-center">
 					<Button color='primary'>Learn More</Button>
 				</div>
 			</Container>
+			{/* <Testimonial /> */}
 		</Fragment>
 	);
 }

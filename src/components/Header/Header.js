@@ -21,7 +21,7 @@ const navLinks = [
     {
         linkText: "Contact",
         url: "#contact"
-    },
+    }
 ]
 
 const Header = (args) => {
