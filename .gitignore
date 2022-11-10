@@ -1,6 +1,3 @@
-build
-node_modules
-emr.dreamguystech.com
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -24,3 +21,6 @@ emr.dreamguystech.com
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# others
+/medic-record-app
