@@ -1,0 +1,21 @@
+.notice-board .media {
+    margin: 10px 0;
+  }
+  .notice-board .media .media-body h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    color: #313131;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: normal;
+  }
+  .notice-board .media .media-body p {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+  }
+  .notice-board .media .media-body span {
+    font-size: 14px;
+  }
