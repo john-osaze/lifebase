@@ -1,7 +1,8 @@
 import { Container } from 'reactstrap';
-// import { Splide, SLIDE } from '@splidejs/splide';
-import "@splidejs/splide/dist/css/splide.min.css";
-import Testifier1 from "../../assets/images/testifier-1.png"
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import "./Testimonial.css"
+import Testifier1 from "../../assets/images/testifier-1.png";
 
 const Testimonial = () => {
     const testimonials = [
@@ -30,19 +31,26 @@ const Testimonial = () => {
 
     return (
         <>
-            <Container className="testimonials">
-                <div className="testimonial-title">
-                    <h4>Real People, Real Stories</h4>
-                </div>
-                <div className="testimonial">
+            <Container className="testimonials section">
+                <Splide className="testimonial" options={{
+                    rewind: true,
+                    pagination: false,
+                    autoplay: true,
+                    type: "loop",
+                    pauseOnHover: true,
+                }}
+                    aria-label="My Favorite Images">
                     {testimonials.map(testify => {
                         return (
-                            <div className="testimony" key={testify.id}>
+                            <SplideSlide className="testimony" key={testify.id}>
                                 <div className="testifier-img">
                                     <img src={testify.testifierImg} alt="" />
                                 </div>
                                 <div className="testifier-info">
-                                    <div className="testimony">
+                                    <div className="testimonial-title text-uppercase">
+                                        <h4>Real People, Real Stories</h4>
+                                    </div>
+                                    <div className="testimony-text">
                                         <p>{testify.testimony}</p>
                                     </div>
 
@@ -51,10 +59,11 @@ const Testimonial = () => {
                                         <p>{testify.testifierDesc}</p>
                                     </div>
                                 </div>
-                            </div>
-                        )}
+                            </SplideSlide>
+                        )
+                    }
                     )}
-                </div>
+                </Splide>
             </Container>
         </>
     )

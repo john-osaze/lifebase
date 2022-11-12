@@ -58,3 +58,12 @@
 .privacy-terms .privacy-item .info{
  margin-left: 2rem;
 }
+
+.sponsors img{
+  width: 20rem;
+  animation: lightSpeedInRight 1s .5s linear both;
+}
+
+.sponsors .row{
+  padding: 5rem 4rem;
+}

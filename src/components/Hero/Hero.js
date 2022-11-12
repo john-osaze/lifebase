@@ -13,7 +13,7 @@ const Hero = () => {
                             <h3>A range of programs for healthcare</h3>
                             <h1>Own your health</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic doloremque tenetur laborum, optio nulla rerum ab sit sequi adipisci rem quidem fugitad eaque vel expedita provident! Nihil, commodi!</p>
-                            <Button color='primary'>Get my Records</Button>
+                            <Button color='primary hero-btn'>Get my Records</Button>
                         </div>
                     </Col>
 

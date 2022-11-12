@@ -1,13 +1,25 @@
 .hero-info h3{
     padding-left: 2rem;
     border-left: 2px solid var(--main-color);
+    animation: fadeInUp .75s .45s linear both;
 }
 
 .hero-info h1{
-    font: normal bold 6rem/normal var(--milliard-bold);    margin: 1.5rem 0;
+    font: normal bold 6rem/normal var(--milliard-bold);
+    margin: 1.5rem 0;
+    animation: fadeInUp .75s .6s linear both;
 }
 
 .hero-info p{
     max-width: 87.5%;
     margin-bottom: 2.5rem;
+    animation: fadeInUp .75s .75s linear both;
+}
+
+.hero-img{
+    animation: fadeIn 1s .45s linear both;
+}
+
+.hero-btn{
+    animation: fadeInUp .75s .9s linear both;
 }

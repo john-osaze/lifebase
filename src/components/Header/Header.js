@@ -56,7 +56,7 @@ const Header = (args) => {
                 <Container>
                     <div className="nav-wrapper">
                         <div className="logo">
-                            <h2>Medic.</h2>
+                            <h2>Lifebase.</h2>
                         </div>
 
 
