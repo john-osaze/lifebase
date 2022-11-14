@@ -16,6 +16,7 @@ import Trustee1 from "./assets/images/trustee-1.png";
 import Trustee2 from "./assets/images/trustee-2.png";
 import Trustee3 from "./assets/images/trustee-3.png";
 import Trustee4 from "./assets/images/trustee-4.png";
+import Footer from "./components/Footer/Footer";
 
 // import {Routes} from 'react-router-dom'
 
@@ -152,6 +153,7 @@ function App() {
 				</div>
 			</Container>
 			<Testimonial />
+			<Footer />
 		</Fragment>
 	);
 }

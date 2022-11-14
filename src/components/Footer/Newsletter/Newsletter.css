@@ -1,0 +1,33 @@
+.newsletter{
+    padding: 0 5rem;
+    position: absolute;
+    z-index: 10;
+    top: 3%;
+    left: 7.5%;
+}
+
+.newsletter-row{
+    box-shadow: 0 0 1.5rem 1rem #9c9c9c2a;
+    padding: 5rem;
+    border-radius: 1rem;
+    background: var(--white-color);
+}
+
+.subscribe-input{
+    padding: 1.75rem 15rem 2.25rem 2rem ;
+    border-radius: 1.4rem;
+    width: 100%;
+}
+
+.subscribe-area{
+    position: relative;
+    width: 45rem;
+}
+
+.subscribe-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+}
