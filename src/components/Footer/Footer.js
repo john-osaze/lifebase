@@ -11,28 +11,26 @@ export default class Footer extends Component {
                     <Newsletter />
                     <Container fluid className="footer-container">
                         <Container>
-                            <Row className="container justify-content-between">
-                                <Col md="3" className="home-footer-wrap">
+                            <Row className="container justify-content-between footer-row">
+                                <Col lg="4" className="home-footer-wrap">
                                     <div className="home-footer-brand-wrap">
                                         <a href="/" aria-current="page" className="home-footer-logo-link w-inline-block w--current">
                                             <h2>Lifebase.</h2>
                                         </a>
 
                                         <div className="footer-info-wrap">
-                                            <div className="paragraph-small inline">
-                                                <a href="mailto:hello@picnichealth.com?subject=Hello%20Picnichealth">hello@picnichealth.com</a>
-                                                <span className="semibold"><br /></span>
-                                                <a href="tel:(415)801-0572">(415) 801-0572</a>
-                                                <span className="semibold"><br /></span>
+                                            <div className="paragraph-small inline contact-info">
+                                                <a href="mailto:hello@lifebase.com?subject=Hello%20Lifebase">hello@lifebase.com</a>
+                                            <a href="tel:(415)801-0572">+(234) 3421-801-0572</a>
                                             </div>
 
                                             <div className="paragraph-small">
                                                 <span className="semibold">HQ&nbsp; Address:<br />
-                                                </span>850 Folsom St, San Francisco, CA 94107
+                                                </span>59, ICE Road, Innovation Hub, B/C.
                                             </div>
 
                                             <div className="paragraph-small">
-                                                <span className="semibold">Address for Medical Records:</span><br />350 Frank H Ogawa Plaza 7th Fl, Ste 700 Oakland, CA 94612
+                                                <span className="semibold">Address for Medical Records:</span><br />350b Uyi Technical Plaza 7th Fl, Ste 700 <br />Benin City, Edo State.
                                             </div>
                                         </div>
                                     </div>
@@ -52,15 +50,13 @@ export default class Footer extends Component {
                                     <div className="home-footer-nav-title">Company</div>
                                     <a href="/" aria-current="page" className="home-footer-nav-link w--current">Home</a>
                                     <a href="/about-us" className="home-footer-nav-link">About</a>
-                                    <a href="/careers" className="home-footer-nav-link">Careers
-                                        <span className="home-footer-nav-link-callout"> - We're growing!</span>
-                                    </a>
+                                    <a href="/careers" className="home-footer-nav-link">Careers</a>
                                     <a href="/blog" className="home-footer-nav-link">Blog</a>
                                 </Col>
 
                                 <Col className="home-footer-nav-list">
                                     <div className="home-footer-nav-title">Support</div>
-                                    <a href="https://help.picnichealth.com/" className="home-footer-nav-link">FAQs</a>
+                                    <a href="/help" className="home-footer-nav-link">FAQs</a>
                                     <a href="/privacy-policy" className="home-footer-nav-link">Privacy Policy</a>
                                     <a href="/terms-of-use" className="home-footer-nav-link">Terms of Use</a>
                                     <a href="/contact" className="home-footer-nav-link">Contact</a>
@@ -68,17 +64,17 @@ export default class Footer extends Component {
 
 
                                 <Col className="login-social-wrap d-flex">
-                                    <a href="https://app.picnichealth.com/login">
+                                    <a href="/login" className="d-block">
                                         <Button color='primary'>Login</Button>
                                     </a>
                                     <div className="home-footer-social-links">
-                                        <a href="https://facebook.com/picnichealth" className="lp-footer-social-link w-inline-block">
+                                        <a href="https://facebook.com" className="lp-footer-social-link w-inline-block">
                                             <i class="ri-facebook-fill"></i>
                                         </a>
-                                        <a href="https://twitter.com/PicnicHealth" className="lp-footer-social-link w-inline-block">
+                                        <a href="https://twitter.com" className="lp-footer-social-link w-inline-block">
                                             <i className="ri-twitter-fill"></i>
                                         </a>
-                                        <a href="https://www.linkedin.com/company/picnichealth/" className="lp-footer-social-link w-inline-block">
+                                        <a href="https://www.linkedin.com/" className="lp-footer-social-link w-inline-block">
                                             <i className="ri-linkedin-fill"></i>
                                         </a>
                                     </div>
@@ -89,7 +85,7 @@ export default class Footer extends Component {
                                 <p className="home-footer-copyright-copy mb-0">
                                     <strong>©</strong>
                                     <strong className="copyright-year">2022</strong>
-                                    <strong> PicnicHealth,</strong> Established 2014
+                                    <strong> Lifebase,</strong> Established 2021.
                                 </p>
                             </div>
                         </Container>

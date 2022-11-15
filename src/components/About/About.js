@@ -6,7 +6,7 @@ import "./About.css"
 const About = () => {
     return (
         <>
-            <Container className='section'>
+            <Container className='section' id='about'>
                 <Row className="about-us justify-content-between align-items-center">
                     <Col lg="6" md="6" sm="12" className="about-img">
                         <img src={AboutImg} alt="about" width="100%"/>

@@ -1,0 +1,28 @@
+.counter-wrap{
+    background: linear-gradient(to right, #2c2c4bee, #2c2c4bee), url(../../assets/images/counter-bg.jpg) no-repeat fixed center;
+    background-size: cover;
+    padding: 15rem 0;
+}
+
+.counter-inner{
+    color: var(--white-color);
+}
+
+.counter-inner > h1{
+    margin-bottom: 7.5rem;
+}
+
+.counter-item:not(:last-child){
+    border-right: thin solid var(--white-color);
+}
+
+.counter-info h1{
+    font-family: var(--milliard-bold);
+    font-size: 3.75rem;
+}
+
+.counter-img img{
+ filter: brightness(400%);
+ width: 7.5rem;
+ margin-right: 2.5rem;
+}

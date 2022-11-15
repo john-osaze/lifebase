@@ -17,6 +17,7 @@ import Trustee2 from "./assets/images/trustee-2.png";
 import Trustee3 from "./assets/images/trustee-3.png";
 import Trustee4 from "./assets/images/trustee-4.png";
 import Footer from "./components/Footer/Footer";
+import Counter from './components/Counter/Counter';
 
 // import {Routes} from 'react-router-dom'
 
@@ -129,6 +130,7 @@ function App() {
 			</Container>
 			<WhyChooseUs />
 			<HowItWorks />
+			<Counter/>
 			<Team />
 			<Container className='section data-privacy'>
 				<div className="title-area text-center">
