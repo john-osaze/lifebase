@@ -1,11 +1,12 @@
 import "./Header.css";
 import { useRef, useEffect } from 'react';
 import { Container, Button } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 const navLinks = [
     {
         linkText: "Home",
-        url: "#home"
+        url: "/home"
     },
 
     {
@@ -80,8 +81,12 @@ const Header = (args) => {
 
 
                         <div className="nav-btns">
-                            <Button color="primary" outline className="btn-secondary">Log In</Button>
-                            <Button color="primary">Sign Up</Button>
+                            <Link to="/login">
+                                <Button color="primary" outline className="btn-secondary">Log In</Button>
+                            </Link>
+                            <Link to="/signup">
+                                <Button color="primary">Sign Up</Button>
+                            </Link>
                             <span className="mobile-menu open" onClick={menuToggle}><i className="ri-menu-3-line"></i></span>
                         </div>
                     </div>
