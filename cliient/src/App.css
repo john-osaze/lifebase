@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+.sm-icon{
+    width: 30px;
+    height: 30px;
+}
+.fade{
+    color: rgb(185, 182, 182);
+}
+.spread{
+    display: flex;
+}
+.charts{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.bold{
+    font-weight: 500;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    background-color: rgb(203, 200, 200);
+    margin-top: 2%;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+nav div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#boarder{
+    border-left: 1px solid black;
+    padding-left: 10px;
+}

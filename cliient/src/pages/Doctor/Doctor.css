@@ -1,0 +1,86 @@
+.Doctor main{
+    width: 90%;
+    margin: auto;
+}
+.Doctor .top{
+    text-align: center;
+}
+.Doctor .top h1{
+    margin-bottom: 10px;
+}
+.Doctor form{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+.Doctor main .medical .fade{
+    margin-bottom: 10px;
+}
+#inquiry{
+    display: flex;
+    gap: 10px;
+}
+#inquiry label, .Doctor form .patient-input{
+    font-weight: 500;
+}
+.Doctor form .patient-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Doctor form .patient-input input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(213, 209, 209);
+}
+.Doctor form .patient-input:last-child{
+    align-self: self-end;
+    margin-left: 5px;
+}
+.Doctor form .patient-input button{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+}
+.Doctor section{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.Doctor section .first{
+    width: 40%;
+}
+.Doctor section .second{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 60%;
+}
+.Doctor .first .search, .Doctor .first .select{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Doctor .first .search div{
+    display: flex;
+    border: 1px solid black;
+    background-color: rgb(1, 1, 54);
+    margin-bottom: 20px;
+    align-items: center;
+}
+.Doctor .first .search img{
+    filter: invert(1);
+    width: 35px;
+    height: 35px;
+}
+.Doctor .first .search input{
+    width: 100%;
+    padding: 15px 5px;
+    border: none;
+}
+.Doctor .select{
+    margin-bottom: 30px;
+}

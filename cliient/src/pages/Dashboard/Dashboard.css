@@ -1,0 +1,104 @@
+.Dashboard main{
+    width: 90%;
+    margin: auto;
+}
+.Dashboard main, .Dashboard section:first-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.Dashboard section:first-child .bold{
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 80%;
+}
+.Dashboard section:first-child .sm-icon{
+    width: 20px;
+    height: 20px;
+}
+#green{
+    background-color: rgb(168, 242, 168);
+    color: green;
+    width: 60%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.Dashboard section:first-child .spread{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    align-items: baseline;
+    padding: 0px 5px;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Dashboard section:first-child .spread .sm-icon{
+    width: 15px;
+    height: 15px;
+}
+.Dashboard section:first-child .spread div{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    gap: 5px;
+}
+.Dashboard section:first-child .fade{
+    font-weight: 500;
+}
+.Dashboard section:nth-child(2){
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding-top: 40px;
+}
+.Dashboard section:nth-child(2) .charts{
+    padding: 20px;
+    height: 450px;
+}
+#book{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Dashboard section:nth-child(2) .spread{
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.details-cont{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: #e9e7e7;
+    padding: 20px 10px;
+    font-weight: 400px;
+    border-radius: 20px;
+}
+.details-cont div p:last-child{
+    font-weight: bold;
+}
+.green{
+    background-color: rgb(168, 242, 168);
+    color: green;
+}
+#appoint{
+    color: green;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.Dashboard section:nth-child(3), .Dashboard section:last-child{
+    margin-bottom: 50px;
+}
+.Dashboard section:nth-child(3) h2, .Dashboard section:last-child h2{
+    margin-bottom: 20px;
+}
